@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Join Us | Green Roots Community Garden</title>
+    <meta name="description" content="Sign up for a garden plot or volunteer day at Green Roots Community Garden and find our location on the map.">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <h1>Green Roots Community Garden</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="plants.html">What We Grow</a></li>
+          <li><a href="join.html" aria-current="page">Join Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <h2>Join Us</h2>
+
+      <!-- Sign-up form: labels, required fields and validation attributes -->
+      <form id="signup-form" method="post">
+        <div class="form-row">
+          <label for="full-name">Full name (required)</label>
+          <input type="text" id="full-name" name="full-name" required minlength="2" maxlength="60" autocomplete="name">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email (required)</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone (optional, 10 to 11 digits)</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" title="Enter 10 or 11 digits, no spaces" autocomplete="tel">
+        </div>
+
+        <div class="form-row">
+          <label for="plot-size">Plot size</label>
+          <select id="plot-size" name="plot-size" required>
+            <option value="">Choose a size</option>
+            <option value="small">Small (2 m x 2 m)</option>
+            <option value="large">Large (4 m x 4 m)</option>
+          </select>
+        </div>
+
+        <fieldset class="form-row">
+          <legend>Gardening experience</legend>
+          <input type="radio" id="exp-new" name="experience" value="beginner" required>
+          <label for="exp-new">Beginner</label>
+          <input type="radio" id="exp-some" name="experience" value="experienced">
+          <label for="exp-some">Experienced</label>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="message">Message (max 200 characters)</label>
+          <textarea id="message" name="message" rows="4" maxlength="200"></textarea>
+        </div>
+
+        <div class="form-row">
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">I agree to follow the garden rules (required)</label>
+        </div>
+
+        <button type="submit" class="btn">Send sign-up</button>
+      </form>
+
+      <!-- Embedded map (iframe needs a title for accessibility) -->
+      <h3>Find the garden</h3>
+      <iframe id="map" title="Map showing the location of the garden" src="https://www.openstreetmap.org/export/embed.html?bbox=7.45%2C9.03%2C7.55%2C9.10&amp;layer=mapnik"></iframe>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Green Roots Community Garden</p>
+    </footer>
+  </body>
+</html>

@@ -1,12 +1,86 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collab Work</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <h1>Welcome</h1>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Green Roots Community Garden | Home</title>
+    <meta
+      name="description"
+      content="Green Roots is a community garden where neighbours grow food, learn and share together."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Header and navigation (same on every page) -->
+    <header class="site-header">
+      <h1>Green Roots Community Garden</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="plants.html">What We Grow</a></li>
+          <li><a href="join.html">Join Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <h2>Grow food. Grow friendships.</h2>
+      <p>
+        Green Roots is a shared garden run by volunteers. Anyone can rent a
+        plot, join a workday or just stop by to enjoy the flowers.
+      </p>
+
+      <!-- Image with caption -->
+      <figure class="hero-figure">
+        <img
+          src="./The war zone.PNG"
+          width="400"
+          height="300"
+          alt="Illustration of three red flowers growing in rich brown soil under a sunny sky"
+        />
+        <figcaption>Our garden beds in full summer bloom.</figcaption>
+      </figure>
+
+      <!-- audio -->
+      <audio controls>
+        <source
+          src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+
+      <br>
+
+      <!-- vidoe -->
+      <video controls width="640">
+        <source
+          src="https://res.cloudinary.com/demo/video/upload/elephants.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      
+
+      <h3>Why join?</h3>
+      <ul class="benefits">
+        <li>Fresh, home-grown vegetables</li>
+        <li>Free weekend workshops</li>
+        <li>A friendly neighbourhood community</li>
+      </ul>
+      <p>
+        <a href="join.html">Sign up today</a> or
+        <a href="plants.html">see what we grow</a>.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Green Roots Community Garden</p>
+    </footer>
+  </body>
 </html>
