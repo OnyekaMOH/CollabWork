@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Mini Magazine</title>
+    <meta
+      name="description"
+      content="A simple mini online magazine template for capstone projects."
+    />
+    <style>
+      /* Basic CSS Styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      header,
+      nav,
+      main,
+      footer {
+        background: #fff;
+        padding: 20px;
+        margin: 10px auto;
+        max-width: 800px;
+        border-radius: 5px;
+      }
+      header {
+        background: #222;
+        color: #fff;
+        text-align: center;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      nav a {
+        color: #0066cc;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      figure {
+        text-align: center;
+        margin: 20px 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background: #eee;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      input,
+      textarea,
+      select {
+        padding: 8px;
+        font-size: 1rem;
+      }
+      button {
+        padding: 10px;
+        background: #0066cc;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #004999;
+      }
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>My Mini Magazine</h1>
+    </header>
+
+    <!-- Navigation (Linked Pages) -->
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="article1.html">Article 1</a></li>
+        <li><a href="article2.html">Article 2</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <section>
+        <h2>Welcome to Article 1</h2>
+        <p>
+          This is a basic paragraph introducing our first article on the site.
+        </p>
+
+        <!-- Image with Figure & Figcaption -->
+        <figure>
+          <img
+            src="https://picsum.photos/600/300"
+            alt="Random placeholder landscape image"
+          />
+          <figcaption>Figure 1: Sample landscape photograph.</figcaption>
+        </figure>
+
+        <!-- List -->
+        <h3>Key Takeaways:</h3>
+        <ul>
+          <li>Keep your HTML structure clean and semantic.</li>
+          <li>Always include alt text for accessibility.</li>
+          <li>Test your layouts with keyboard navigation.</li>
+        </ul>
+
+        <!-- Table -->
+        <h3>Article Statistics</h3>
+        <table>
+          <caption>
+            Views per Article
+          </caption>
+          <thead>
+            <tr>
+              <th>Article</th>
+              <th>Author</th>
+              <th>Views</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Article 1</td>
+              <td>Jane Doe</td>
+              <td>1,240</td>
+            </tr>
+            <tr>
+              <td>Article 2</td>
+              <td>John Smith</td>
+              <td>850</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Media (Audio) -->
+        <h3>Listen to Summary</h3>
+        <audio controls>
+          <source
+            src="https://www.w3schools.com/html/horse.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+
+        <!-- Form with Validation -->
+        <h3>Contact & Feedback</h3>
+        <form action="#" method="get">
+          <label for="name">Name *</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Your name"
+          />
+
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Your email"
+          />
+
+          <label for="message">Message *</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            placeholder="Type your message..."
+          ></textarea>
+
+          <button type="submit">Submit Form</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 My Mini Magazine. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
