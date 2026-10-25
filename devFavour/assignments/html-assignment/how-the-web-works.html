@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facts about the web | How the Web Works</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-text">How Does the Web Actually Work? 🌐</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="how-the-web-works.html" aria-current="page">How the Web Works</a></li>
+                <li><a href="web-history.html">Web History</a></li>
+                <li><a href="developer-facts.html">Developers Facts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-content">
+        <section class="introduction-page">
+            <h2 class="intro-text">What Really Happens When You Visit a Website?</h2>
+            <p class="intro-content">
+                You type a website address, press Enter, and within seconds, a
+                webpage appears on your screen.
+            </p>
+            <p>Simple, right?</p>
+            <p>
+                But behind that little action, several technologies are working
+                together to make it happen.
+            </p>
+            <p>Let's uncover some of the magic.</p>
+        </section>
+
+        <section class="browser-card">
+            <h2 class="browser-text">Your Browser Doesn't Know Every Website's Address</h2>
+            <p class="browser-content">
+                Have you ever wondered how your browser knows where to find a
+                website?
+            </p>
+            <p>That's where DNS (Domain Name System) comes in.</p>
+            <p>Think of DNS as the internet's address book.</p>
+            <p>
+                When you type a domain name like example.com, DNS helps your
+                browser find the corresponding IP address needed to connect to
+                the website's server.
+            </p>
+            <p>
+                Without DNS, navigating the web using memorable names would be
+                much more difficult.
+            </p>
+            <h3 class="howit-works-guide">What Happens Next?</h3>
+            <ol class="guide-list">
+                <li>You enter a URL: Your browser identifies the website you're requesting.</li>
+                <li>DNS helps find the address: The domain name is resolved to an IP address, unless that information is
+                    already cached.</li>
+                <li>Your browser sends a request: It uses HTTP or HTTPS to request resources from the server.</li>
+                <li>The server responds: It returns the requested resources or an appropriate response, such as an
+                    error.</li>
+                <li>Your browser displays the page: It processes the received content and renders what you see.</li>
+            </ol>
+            <p>And all of this can happen incredibly quickly.</p>
+        </section>
+
+        <section class="howinfor-travels-card">
+            <h2 class="howinfor-travels-text">Information Travels in Tiny Packets 📦</h2>
+            <p class="howinfor-travels-content">
+                Here's something interesting: when information travels across
+                the internet, it isn't necessarily sent as one giant piece.
+            </p>
+            <p>Instead, data is divided into smaller units called packets.</p>
+            <p>
+                Each packet carries information that helps the network deliver
+                it to the correct destination.
+            </p>
+            <p>
+                These packets can travel across different network routes before
+                their data is processed and reassembled.
+            </p>
+            <p>Why does this matter?</p>
+            <p>
+                Breaking information into packets allows networks to transport
+                data efficiently and makes it possible to recover from some
+                transmission problems without sending everything again.
+            </p>
+            <p>
+                So the next time you load a website, remember that the
+                information on your screen has travelled through a network to
+                reach you.
+            </p>
+        </section>
+
+        <section class="bts-browser-card">
+            <h2 class="bts-browser-text">Your Browser Is Doing More Than Displaying Text 👀</h2>
+            <p class="bts-browser-content">
+                When a browser receives a webpage's files, its work isn't
+                finished.
+            </p>
+            <p>
+                It must interpret the resources and turn them into something
+                you can see and interact with.
+            </p>
+            <p>Three important technologies often work together:</p>
+            <ul class="bts-browser">
+                <li>HTML: Defines the content and structure of the webpage.</li>
+                <li>CSS: Controls its appearance and presentation.</li>
+                <li>JavaScript: Can add interactivity and dynamic behaviour.</li>
+            </ul>
+            <p>
+                The browser processes these resources, calculates the layout,
+                and draws the page onto your screen.
+            </p>
+            <p>
+                That beautiful website you see is the result of several
+                processes happening behind the scenes.
+            </p>
+        </section>
+
+        <section class="more-infor-card">
+            <h2 class="more-infor-text">Want to Dig Deeper?</h2>
+            <p class="more-infor-content">
+                There's much more happening behind every click, request, and
+                webpage.
+            </p>
+            <p>Explore these resources to learn more:</p>
+            <ul>
+                <li><a href="">MDN — How the Web Works</a></li>
+                <li><a href="">MDN — How Browsers Load Websites</a></li>
+                <li><a href="">Cloudflare — What Is the Network Layer?</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-text">
+            Keep Exploring: <a href="">Web History</a> |
+            <a href="">Developer Facts</a> |
+            <a href="./index.html">Back to Home</a>
+        </p>
+        <p>&copy; 2026 Fun Facts About the Web. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
